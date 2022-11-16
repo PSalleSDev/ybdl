@@ -1,7 +1,7 @@
 module.exports = (url, modules, callback) => {
     modules.request(false).get(url + "/download", (err, response, a) => {
         let d1 = modules.parser(a)
-        let split = url.split("/")
+        let split = String(url).split("/")
         let sources = {}
 
         d1.querySelectorAll(".mt-4 > a").forEach(item => {
