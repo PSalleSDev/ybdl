@@ -1,5 +1,5 @@
 module.exports = {
-    id: "Anime Vision",
+    id: "animes.vision",
     run: (url, modules, callback) => {
         modules.request(0).get(url, (err, response, data) => {
             let document = modules.parser(data)
