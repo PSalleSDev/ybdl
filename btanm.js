@@ -5,8 +5,6 @@ module.exports = {
 
         function Append(quality, source, check) {
             sources[quality] = source
-
-            console.log(Object.keys(sources).length)
             if(Object.keys(sources).length == check.length) { callback(sources) }
         }
 
